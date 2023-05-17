@@ -1,18 +1,5 @@
 import { setOwnsBlueJeans } from "./TransientState.js"
 
-
-/* 
-    Responsibility: Provide UI controls for survey taker to choose 
-        'yes' or 'no' for ownership of blue jeans
-
-    Strategy:
-        1. A component function that produces HTML for two radio buttons    
-
-    
-
-*/
-
-
 /*
 Since the value of the radio buttons is the string of
 'true' and the string of 'false', you must convert the

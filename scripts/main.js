@@ -20,4 +20,6 @@ const render = async () => {
     `
 }
 
+document.addEventListener("newSubmissionCreated", render)
+
 render()

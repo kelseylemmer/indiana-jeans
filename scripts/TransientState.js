@@ -16,7 +16,6 @@ export const setSocioLocationId = (chosenLocation) => {
     console.log(transientState)
 }
 
-
 // Function to convert transient state to permanent state
 export const saveSurveySubmission = async () => {
     const postOptions = {
@@ -29,3 +28,6 @@ export const saveSurveySubmission = async () => {
 
     const response = await fetch('http://localhost:8088/submissions', postOptions)
 }
+
+const customEvent = new CustomEvent("newSubmissionCreated")
+document.dispatchEvent(customEvent)
