@@ -10,5 +10,5 @@ const handleSurveySubmissionClick = (clickEvent) => {
 export const SaveSubmission = () => {
     document.addEventListener("click", handleSurveySubmissionClick)
 
-    return "<button id='saveSubmission'>Save </button>"
+    return "<div><button id='saveSubmission'>Save </button></div>"
 }

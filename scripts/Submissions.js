@@ -6,9 +6,9 @@ export const SubmissionList = async () => {
     // Iterate the submissions and create some <section> representations
     let submissionHTML = ''
     for (const submission of submissions) {
-        submissionHTML += `<section>
-            <div>Owns Jeans? ${submission.ownsBlueJeans}</div
-            <div>Area type foreign key? ${submission.socioLocationId}</div
+        submissionHTML += `<section class="submission">
+            <div>Owns Jeans? ${submission.ownsBlueJeans}</div>
+            <div>Area type foreign key? ${submission.socioLocationId}</div>
         </section>`
     }
     return submissionHTML
