@@ -27,7 +27,7 @@ export const saveSurveySubmission = async () => {
     }
 
     const response = await fetch('http://localhost:8088/submissions', postOptions)
-}
 
-const customEvent = new CustomEvent("newSubmissionCreated")
-document.dispatchEvent(customEvent)
+    const customEvent = new CustomEvent("newSubmissionCreated")
+    document.dispatchEvent(customEvent)
+}
